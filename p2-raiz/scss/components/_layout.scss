@@ -13,23 +13,22 @@
   min-height: 100dvh;
   display: grid;
   grid-template-areas:
-   "cabecera"
-   "heroe"
-   "principal"
-   "consejos"
-   "pie";
-   grid-template-columns: 1fr;
+    "cabecera"
+    "heroe"
+    "principal"
+    "consejos"
+    "pie";
+  grid-template-columns: 1fr;
   // desde $bp-md
-  @include desde($bp-md){
-    grid-template-areas: 
-    "cabecera  cabecera"
-    "heroe     heroe"
-    "principal consejos"
-    "pie       pie"
-    ;
+  @include desde($bp-md) {
+    grid-template-areas:
+      "cabecera  cabecera"
+      "heroe     heroe"
+      "principal consejos"
+      "pie       pie";
     grid-template-columns: 1fr 20rem;
   }
-  @include desde($bp-lg){
+  @include desde($bp-lg) {
     max-width: 65rem;
     margin-inline: auto;
   }
@@ -43,10 +42,10 @@
 .principal__titulo {
   margin-top: 0;
 }
-.cabecera{
+.cabecera {
   grid-area: cabecera;
 }
-.heroe{
+.heroe {
   grid-area: heroe;
 }
 .consejos {

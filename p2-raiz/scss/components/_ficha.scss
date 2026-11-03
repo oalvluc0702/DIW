@@ -10,6 +10,7 @@
 
 .hueco-ficha {
   margin-bottom: $space-xl;
+  container-type: inline-size;
 }
 
 .ficha {
@@ -18,6 +19,10 @@
   overflow: hidden;
   border-radius: $radius-md;
   background: var(--color-superficie);
+  flex-direction: column;
+  @container (min-width: 18rem ) {
+    flex-direction: row;
+  }
 }
 
 .ficha__cuerpo {
