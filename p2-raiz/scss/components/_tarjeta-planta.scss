@@ -5,3 +5,71 @@
 //    - los modificadores --oferta (que se note) y --agotada (la imagen en gris);
 //    - especificidad plana: una clase por selector (o .tarjeta-planta--mod .tarjeta-planta__elem). Sin etiquetas ni ids.
 @use "../tokens" as *;
+.tarjeta-planta {
+  background-color: $dark-surface;
+  color: $dark-text;
+  border-radius: $radius-md;
+  padding: $space-md;
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &__imagen {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: $radius-md;
+  }
+
+  &__titulo {
+    font-size: 1.25rem;
+    color: $dark-text;
+    margin: 0;
+  }
+
+  &__descripcion {
+    font-size: 0.95rem;
+    color: $dark-text; 
+    opacity: 0.8;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  &__precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $dark-brand-primary;
+    margin: 0;
+  }
+
+  &__boton {
+    width: 100%;
+    margin-top: $space-xs;
+  }
+
+  &__etiqueta {
+    display: inline-block;
+    background-color: $dark-accent;
+    color: $dark-on-brand;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: $space-xs $space-sm;
+    border-radius: $radius-md;
+    align-self: flex-start;
+  }
+}
+
+
+.tarjeta-planta--agotada {
+  .tarjeta-planta__imagen {
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+}
+
+
+.tarjeta-planta--oferta {
+  border: 2px solid $dark-accent;
+}
