@@ -5,6 +5,7 @@
 //    - los modificadores --oferta (que se note) y --agotada (la imagen en gris);
 //    - especificidad plana: una clase por selector (o .tarjeta-planta--mod .tarjeta-planta__elem). Sin etiquetas ni ids.
 @use "../tokens" as *;
+
 .tarjeta-planta {
   background-color: $dark-surface;
   color: $dark-text;
@@ -13,7 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: $space-sm;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
 
   &__imagen {
     width: 100%;

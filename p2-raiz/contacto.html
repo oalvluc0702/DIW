@@ -34,39 +34,65 @@ Nada de valores sueltos entre corchetes ni style="". -->
       <h1 class="bg-dark text-center font-bold text-3xl text-marca">Contacto</h1>
 
       <div class="bg-fondo grid grid-cols-1 md:grid-cols-2 gap-10 my-60 mx-10">
-        <section aria-label="Dónde estamos" class=" flex flex-col gap-6 border-3 border-marca bg-fondo h-full rounded-lg justify-between p-2" >
-        
-          <div class="flex flex-col  text-texto">
+        <section
+          aria-label="Dónde estamos"
+          class="flex flex-col gap-6 border-3 border-marca bg-fondo h-full rounded-lg justify-between p-2"
+        >
+          <div class="flex flex-col text-texto">
             <h2 class="text-marca text-2xl font font-bold text-center">El vivero</h2>
             <p>Abrimos de lunes a sábado, de 9:00 a 14:00. Si vienes en persona, te ayudamos a elegir.</p>
           </div>
-            <p class="text-tierra font-semibold text-center">Envíos gratis desde 40 €</p>
+          <p class="text-tierra font-semibold text-center">Envíos gratis desde 40 €</p>
         </section>
 
-        <form action="#" class="flex flex-col gap-8 border-3 p-3 border-marca">
-          <label for="nombre" class="flex flex-col items-center">
+        <form action="#" class="flex flex-col gap-8 border-3 p-3 border-marca rounded-lg">
+          <label for="nombre" class="flex flex-col items-center text-marca font-bold text-xl">
             Nombre
 
-            <input class="border-2 w-full" id="nombre" name="nombre" autocomplete="name" required />
+            <input
+              class="border-2 border-black text-black w-full"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              required
+            />
           </label>
 
-          <label for="correo" class="flex flex-col items-center" >
+          <label for="correo" class="flex flex-col items-center text-marca font-bold text-xl">
             Correo
 
-            <input class="border-2 w-full" id="correo" name="correo" type="email" autocomplete="email" required />
+            <input
+              class="border-2 border-black text-black w-full"
+              id="correo"
+              name="correo"
+              type="email"
+              autocomplete="email"
+              required
+            />
           </label>
 
-          <label for="mensaje" class="flex flex-col items-center">
+          <label for="mensaje" class="flex flex-col items-center text-marca font-bold text-xl">
             ¿En qué te ayudamos?
 
-            <textarea class="border-2 w-full" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea
+              class="border-2 border-black text-black w-full"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+            ></textarea>
           </label>
 
-          <button type="submit" class="bg-tierra border-3 py-4 rounded-md">Enviar</button>
+          <button
+            type="submit"
+            class="bg-tierra border-3 border-black text-marca-suave font-bold text-xl py-4 rounded-md hover:text-black hover:bg-marca hover:transition-colors hover:cursor-pointer hover:duration-100 focus-visible:border-marca-suave focus-visible:text-black focus-visible:bg-marca focus-visible:transition-colors focus-visible:cursor-pointer focus-visible:duration-100"
+          >
+            Enviar
+          </button>
         </form>
       </div>
     </main>
 
-    <footer class=" font-bold text-xl bg-tierra text-texto text-center py-4 px-6">RAÍZ, vivero online · Cádiz</footer>
+    <footer class="font-bold text-xl bg-tierra text-texto text-center py-4 px-6">RAÍZ, vivero online · Cádiz</footer>
   </body>
 </html>
