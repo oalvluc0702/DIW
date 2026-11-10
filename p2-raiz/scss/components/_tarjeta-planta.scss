@@ -31,7 +31,7 @@
 
   &__descripcion {
     font-size: 0.95rem;
-    color: $dark-text; 
+    color: $dark-text;
     opacity: 0.8;
     margin: 0;
     flex-grow: 1;
@@ -61,14 +61,12 @@
   }
 }
 
-
 .tarjeta-planta--agotada {
   .tarjeta-planta__imagen {
     filter: grayscale(100%);
     opacity: 0.5;
   }
 }
-
 
 .tarjeta-planta--oferta {
   border: 2px solid $dark-accent;

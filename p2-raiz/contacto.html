@@ -1,52 +1,72 @@
 <!doctype html>
+
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Contacto · RAÍZ</title>
+
     <link rel="stylesheet" href="/src/tailwind.css" />
   </head>
-  <body>
+
+  <body class="bg-fondo min-h-screen flex flex-col justify-between">
     <!-- ✍️ B3 · Esta página va SOLO con Tailwind (src/tailwind.css), sin SASS. Ponle las clases de utilidad:
-         los colores de RAÍZ (del @theme), dos columnas desde md y un botón con hover: y focus-visible:.
-         Nada de valores sueltos entre corchetes ni style="". -->
-    <header>
-      <a href="/">RAÍZ</a>
-      <nav aria-label="Principal">
-        <a href="/">Inicio</a>
-        <a href="/producto.html">Monstera</a>
+
+los colores de RAÍZ (del @theme), dos columnas desde md y un botón con hover: y focus-visible:.
+
+Nada de valores sueltos entre corchetes ni style="". -->
+
+    <header class="bg-tierra border-b flex flex-row justify-between items-center py-4 px-6">
+      <a href="/" class="text-marca-suave font-bold text-lg">RAÍZ</a>
+
+      <nav aria-label="Principal" class="flex flex-row gap-5">
+        <a href="/" class="hover:text-marca">Inicio</a>
+
+        <a href="/producto.html" class="hover:text-marca transition-colors">Monstera</a>
+
         <a href="/contacto.html" aria-current="page">Contacto</a>
       </nav>
     </header>
 
-    <main>
-      <h1>Contacto</h1>
+    <main class="bg-marca-suave flex flex-col gap-4">
+      <h1 class="bg-dark text-center font-bold text-3xl text-marca">Contacto</h1>
 
-      <div>
-        <section aria-label="Dónde estamos">
-          <h2>El vivero</h2>
-          <p>Abrimos de lunes a sábado, de 9:00 a 14:00. Si vienes en persona, te ayudamos a elegir.</p>
-          <p>Envíos gratis desde 40 €</p>
+      <div class="bg-fondo grid grid-cols-1 md:grid-cols-2 gap-10 my-60 mx-10">
+        <section aria-label="Dónde estamos" class=" flex flex-col gap-6 border-3 border-marca bg-fondo h-full rounded-lg justify-between p-2" >
+        
+          <div class="flex flex-col  text-texto">
+            <h2 class="text-marca text-2xl font font-bold text-center">El vivero</h2>
+            <p>Abrimos de lunes a sábado, de 9:00 a 14:00. Si vienes en persona, te ayudamos a elegir.</p>
+          </div>
+            <p class="text-tierra font-semibold text-center">Envíos gratis desde 40 €</p>
         </section>
 
-        <form action="#">
-          <label for="nombre">
+        <form action="#" class="flex flex-col gap-8 border-3 p-3 border-marca">
+          <label for="nombre" class="flex flex-col items-center">
             Nombre
-            <input id="nombre" name="nombre" autocomplete="name" required />
+
+            <input class="border-2 w-full" id="nombre" name="nombre" autocomplete="name" required />
           </label>
-          <label for="correo">
+
+          <label for="correo" class="flex flex-col items-center" >
             Correo
-            <input id="correo" name="correo" type="email" autocomplete="email" required />
+
+            <input class="border-2 w-full" id="correo" name="correo" type="email" autocomplete="email" required />
           </label>
-          <label for="mensaje">
+
+          <label for="mensaje" class="flex flex-col items-center">
             ¿En qué te ayudamos?
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <textarea class="border-2 w-full" id="mensaje" name="mensaje" rows="4" required></textarea>
           </label>
-          <button type="submit">Enviar</button>
+
+          <button type="submit" class="bg-tierra border-3 py-4 rounded-md">Enviar</button>
         </form>
       </div>
     </main>
 
-    <footer>RAÍZ, vivero online · Cádiz</footer>
+    <footer class=" font-bold text-xl bg-tierra text-texto text-center py-4 px-6">RAÍZ, vivero online · Cádiz</footer>
   </body>
 </html>
